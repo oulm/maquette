@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" src="/main.js" defer></script>
+
+    <!-- FONT-STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- END-FONT-STYLE -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- LOGO-IMG -->
+          <a href="chat.html" aria-label="home" class="logo">
+            <svg width="84" height="40">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+            <p class="sub-logo">Ping-ball</p>
+          </a>
+          <!-- END-LOGO-IMG -->
+
+          <!-- MOBILE-NAV-BUTTON -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <!-- <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="Icon Hamburger" aria-hidden="true">
+            <img class="icon-close" src="images/icon-close.svg" alt="Icon Close" aria-hidden="true"> -->
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <!-- END-MOBILE-NAV-BUTTON -->
+
+          <!-- NAVIGATION-BAR -->
+          <nav id="primary-navigation" class="primary-navigation">
+            <ul role="list" aria-label="Primary" class="nav-list">
+              <li><a href="chat.html">Home</a></li>
+              <li><a href="#about">About the game</a></li>
+              <li><a href="profile.html">The Team</a></li>
+            </ul>
+          </nav>
+          <!-- END-NAVIGATION-BAR -->
+
+          <button class="button | display-sm-none display-md-inline-flex">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END-HEADER -->
+
+    <!-- MAIN -->
+    <main>
+      <!-- SHOWCASE -->
+      <section class="showcase">
+        <div class="container">
+          <div class="showcase-content">
+            <div class="showcase-text">
+              <h2 class="showcase-message">
+                Your first real time <br />Ping-Pong
+              </h2>
+              <p class="showcase-description">
+                This is the ft_trancendance project for 1337 school, it is
+                faithfull to the 1769 Ping Pong ball game, we wish you all the
+                best in your journey with our Ping Ball game, have fun!
+              </p>
+              <div class="showcase-buttons">
+                <button class="button">Login with intra</button>
+                <button class="button" data-type="inverted">Get started</button>
+              </div>
+            </div>
+            <div class="showcase-images">
+              <div class="ball-image"></div>
+              <div class="paddle-image"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END-SHOWCASE -->
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <h1 class="about-title">About the game</h1>
+            <div class="about-core">
+              <div class="about-img">
+                <img src="/images/table.svg" alt="table" />
+              </div>
+              <p class="about-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                tempore, blanditiis doloribus, quod distinctio harum laboriosam
+                quia ducimus quo, reprehenderit dignissimos ex cupiditate
+                aperiam! Iusto minima necessitatibus, amet sapiente inventore
+                magni ratione facere blanditiis et, cumque aliquid quisquam unde
+                deserunt laudantium dolores! Distinctio atque ut facilis
+                laudantium voluptatem! Totam non, mollitia cumque, reiciendis
+                porro, magnam id recusandae sit vel itaque suscipit explicabo
+                consectetur voluptatum laudantium magni iusto fugiat earum quas
+                omnis saepe. Doloremque possimus a ipsa deserunt accusantium
+                dolorum ullam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END-ABOUT -->
+
+      <!-- TEAMS -->
+      <section class="teams">
+        <div class="container">
+          <div class="mySwiper">
+            <div class="teams-content swiper-wrapper">
+              <div class="member-card swiper-slide">
+                <div class="member-card-header">
+                  <div class="member-img">
+                    <img
+                      src="/images/avatars/member_1.png"
+                      alt="image profile"
+                    />
+                  </div>
+                </div>
+                <div class="member-card-body">
+                  <div class="member-fullname">oulmyr oualid</div>
+                  <div class="member-username">ooulmyr</div>
+                  <div class="member-mission">Frontend Developer</div>
+                </div>
+                <div class="member-card-footer">
+                  <div class="member-social-media">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i> </a>
+                    <a href="#"
+                      ><svg
+                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        version="1.1"
+                        id="Calque_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 137.6 96.599998"
+                        enable-background="new 0 0 595.3 841.9"
+                        xml:space="preserve"
+                        inkscape:version="0.48.2 r9819"
+                        width="100%"
+                        height="100%"
+                        class="company-logo"
+                        sodipodi:docname="42_logo.svg"
+                      >
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-custom-link"
+                        />
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-general-link"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-custom-style"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-native-style"
+                        />
+                        <metadata id="metadata17">
+                          <rdf:RDF
+                            ><cc:Work rdf:about=""
+                              ><dc:format>image/svg+xml</dc:format
+                              ><dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work
+                          ></rdf:RDF>
+                        </metadata>
+                        <defs id="defs15" />
+                        <sodipodi:namedview
+                          pagecolor="#ffffff"
+                          bordercolor="#666666"
+                          borderopacity="1"
+                          objecttolerance="10"
+                          gridtolerance="10"
+                          guidetolerance="10"
+                          inkscape:pageopacity="0"
+                          inkscape:pageshadow="2"
+                          inkscape:window-width="1060"
+                          inkscape:window-height="811"
+                          id="namedview13"
+                          showgrid="false"
+                          fit-margin-top="0"
+                          fit-margin-left="0"
+                          fit-margin-right="0"
+                          fit-margin-bottom="0"
+                          inkscape:zoom="0.39642998"
+                          inkscape:cx="68.450005"
+                          inkscape:cy="48.350011"
+                          inkscape:window-x="670"
+                          inkscape:window-y="233"
+                          inkscape:window-maximized="0"
+                          inkscape:current-layer="Calque_1"
+                        />
+                        <g id="g3" transform="translate(-229.2,-372.70002)">
+                          <polygon
+                            points="229.2,443.9 279.9,443.9 279.9,469.3 305.2,469.3 305.2,423.4 254.6,423.4 305.2,372.7 279.9,372.7 229.2,423.4 "
+                            id="polygon5"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="316.1,398.1 341.4,372.7 316.1,372.7 "
+                            id="polygon7"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="341.4,398.1 316.1,423.4 316.1,448.7 341.4,448.7 341.4,423.4 366.8,398.1 366.8,372.7 341.4,372.7 "
+                            id="polygon9"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="366.8,423.4 341.4,448.7 366.8,448.7 "
+                            id="polygon11"
+                            style="fill: #ffffff"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-card swiper-slide">
+                <div class="member-card-header">
+                  <div class="member-img">
+                    <img
+                      src="/images/avatars/member_1.png"
+                      alt="image profile"
+                    />
+                  </div>
+                </div>
+                <div class="member-card-body">
+                  <div class="member-fullname">hamza hmiza</div>
+                  <div class="member-username">hammmzzaa</div>
+                  <div class="member-mission">Frontend Developer</div>
+                </div>
+                <div class="member-card-footer">
+                  <div class="member-social-media">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i> </a>
+                    <a href="#"
+                      ><svg
+                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        version="1.1"
+                        id="Calque_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 137.6 96.599998"
+                        enable-background="new 0 0 595.3 841.9"
+                        xml:space="preserve"
+                        inkscape:version="0.48.2 r9819"
+                        width="100%"
+                        height="100%"
+                        class="company-logo"
+                        sodipodi:docname="42_logo.svg"
+                      >
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-custom-link"
+                        />
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-general-link"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-custom-style"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-native-style"
+                        />
+                        <metadata id="metadata17">
+                          <rdf:RDF
+                            ><cc:Work rdf:about=""
+                              ><dc:format>image/svg+xml</dc:format
+                              ><dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work
+                          ></rdf:RDF>
+                        </metadata>
+                        <defs id="defs15" />
+                        <sodipodi:namedview
+                          pagecolor="#ffffff"
+                          bordercolor="#666666"
+                          borderopacity="1"
+                          objecttolerance="10"
+                          gridtolerance="10"
+                          guidetolerance="10"
+                          inkscape:pageopacity="0"
+                          inkscape:pageshadow="2"
+                          inkscape:window-width="1060"
+                          inkscape:window-height="811"
+                          id="namedview13"
+                          showgrid="false"
+                          fit-margin-top="0"
+                          fit-margin-left="0"
+                          fit-margin-right="0"
+                          fit-margin-bottom="0"
+                          inkscape:zoom="0.39642998"
+                          inkscape:cx="68.450005"
+                          inkscape:cy="48.350011"
+                          inkscape:window-x="670"
+                          inkscape:window-y="233"
+                          inkscape:window-maximized="0"
+                          inkscape:current-layer="Calque_1"
+                        />
+                        <g id="g3" transform="translate(-229.2,-372.70002)">
+                          <polygon
+                            points="229.2,443.9 279.9,443.9 279.9,469.3 305.2,469.3 305.2,423.4 254.6,423.4 305.2,372.7 279.9,372.7 229.2,423.4 "
+                            id="polygon5"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="316.1,398.1 341.4,372.7 316.1,372.7 "
+                            id="polygon7"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="341.4,398.1 316.1,423.4 316.1,448.7 341.4,448.7 341.4,423.4 366.8,398.1 366.8,372.7 341.4,372.7 "
+                            id="polygon9"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="366.8,423.4 341.4,448.7 366.8,448.7 "
+                            id="polygon11"
+                            style="fill: #ffffff"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-card swiper-slide">
+                <div class="member-card-header">
+                  <div class="member-img">
+                    <img
+                      src="/images/avatars/member_1.png"
+                      alt="image profile"
+                    />
+                  </div>
+                </div>
+                <div class="member-card-body">
+                  <div class="member-fullname">abdelmoumen el mahmoudi</div>
+                  <div class="member-username">ael-mahm</div>
+                  <div class="member-mission">backend Developer</div>
+                </div>
+                <div class="member-card-footer">
+                  <div class="member-social-media">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i> </a>
+                    <a href="#"
+                      ><svg
+                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        version="1.1"
+                        id="Calque_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 137.6 96.599998"
+                        enable-background="new 0 0 595.3 841.9"
+                        xml:space="preserve"
+                        inkscape:version="0.48.2 r9819"
+                        width="100%"
+                        height="100%"
+                        class="company-logo"
+                        sodipodi:docname="42_logo.svg"
+                      >
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-custom-link"
+                        />
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-general-link"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-custom-style"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-native-style"
+                        />
+                        <metadata id="metadata17">
+                          <rdf:RDF
+                            ><cc:Work rdf:about=""
+                              ><dc:format>image/svg+xml</dc:format
+                              ><dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work
+                          ></rdf:RDF>
+                        </metadata>
+                        <defs id="defs15" />
+                        <sodipodi:namedview
+                          pagecolor="#ffffff"
+                          bordercolor="#666666"
+                          borderopacity="1"
+                          objecttolerance="10"
+                          gridtolerance="10"
+                          guidetolerance="10"
+                          inkscape:pageopacity="0"
+                          inkscape:pageshadow="2"
+                          inkscape:window-width="1060"
+                          inkscape:window-height="811"
+                          id="namedview13"
+                          showgrid="false"
+                          fit-margin-top="0"
+                          fit-margin-left="0"
+                          fit-margin-right="0"
+                          fit-margin-bottom="0"
+                          inkscape:zoom="0.39642998"
+                          inkscape:cx="68.450005"
+                          inkscape:cy="48.350011"
+                          inkscape:window-x="670"
+                          inkscape:window-y="233"
+                          inkscape:window-maximized="0"
+                          inkscape:current-layer="Calque_1"
+                        />
+                        <g id="g3" transform="translate(-229.2,-372.70002)">
+                          <polygon
+                            points="229.2,443.9 279.9,443.9 279.9,469.3 305.2,469.3 305.2,423.4 254.6,423.4 305.2,372.7 279.9,372.7 229.2,423.4 "
+                            id="polygon5"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="316.1,398.1 341.4,372.7 316.1,372.7 "
+                            id="polygon7"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="341.4,398.1 316.1,423.4 316.1,448.7 341.4,448.7 341.4,423.4 366.8,398.1 366.8,372.7 341.4,372.7 "
+                            id="polygon9"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="366.8,423.4 341.4,448.7 366.8,448.7 "
+                            id="polygon11"
+                            style="fill: #ffffff"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-card swiper-slide">
+                <div class="member-card-header">
+                  <div class="member-img">
+                    <img
+                      src="/images/avatars/member_1.png"
+                      alt="image profile"
+                    />
+                  </div>
+                </div>
+                <div class="member-card-body">
+                  <div class="member-fullname">yassine abouali</div>
+                  <div class="member-username">ybouali</div>
+                  <div class="member-mission">end Developer</div>
+                </div>
+                <div class="member-card-footer">
+                  <div class="member-social-media">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i> </a>
+                    <a href="#"
+                      ><svg
+                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        version="1.1"
+                        id="Calque_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 137.6 96.599998"
+                        enable-background="new 0 0 595.3 841.9"
+                        xml:space="preserve"
+                        inkscape:version="0.48.2 r9819"
+                        width="100%"
+                        height="100%"
+                        class="company-logo"
+                        sodipodi:docname="42_logo.svg"
+                      >
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-custom-link"
+                        />
+                        <link
+                          xmlns=""
+                          type="text/css"
+                          rel="stylesheet"
+                          id="dark-mode-general-link"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-custom-style"
+                        />
+                        <style
+                          xmlns=""
+                          lang="en"
+                          type="text/css"
+                          id="dark-mode-native-style"
+                        />
+                        <metadata id="metadata17">
+                          <rdf:RDF
+                            ><cc:Work rdf:about=""
+                              ><dc:format>image/svg+xml</dc:format
+                              ><dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work
+                          ></rdf:RDF>
+                        </metadata>
+                        <defs id="defs15" />
+                        <sodipodi:namedview
+                          pagecolor="#ffffff"
+                          bordercolor="#666666"
+                          borderopacity="1"
+                          objecttolerance="10"
+                          gridtolerance="10"
+                          guidetolerance="10"
+                          inkscape:pageopacity="0"
+                          inkscape:pageshadow="2"
+                          inkscape:window-width="1060"
+                          inkscape:window-height="811"
+                          id="namedview13"
+                          showgrid="false"
+                          fit-margin-top="0"
+                          fit-margin-left="0"
+                          fit-margin-right="0"
+                          fit-margin-bottom="0"
+                          inkscape:zoom="0.39642998"
+                          inkscape:cx="68.450005"
+                          inkscape:cy="48.350011"
+                          inkscape:window-x="670"
+                          inkscape:window-y="233"
+                          inkscape:window-maximized="0"
+                          inkscape:current-layer="Calque_1"
+                        />
+                        <g id="g3" transform="translate(-229.2,-372.70002)">
+                          <polygon
+                            points="229.2,443.9 279.9,443.9 279.9,469.3 305.2,469.3 305.2,423.4 254.6,423.4 305.2,372.7 279.9,372.7 229.2,423.4 "
+                            id="polygon5"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="316.1,398.1 341.4,372.7 316.1,372.7 "
+                            id="polygon7"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="341.4,398.1 316.1,423.4 316.1,448.7 341.4,448.7 341.4,423.4 366.8,398.1 366.8,372.7 341.4,372.7 "
+                            id="polygon9"
+                            style="fill: #ffffff"
+                          />
+                          <polygon
+                            points="366.8,423.4 341.4,448.7 366.8,448.7 "
+                            id="polygon11"
+                            style="fill: #ffffff"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- END-TEAMS -->
+    </main>
+    <!-- END-MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+      <span class="copyright-year"></span> &nbsp; &copy; &nbsp; FT_Trencendance
+    </footer>
+    <!-- END-FOOTER -->
+
+    <script
+      src="https://kit.fontawesome.com/03d54b4c8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

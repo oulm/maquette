@@ -1,0 +1,7 @@
+1- Get all the installed extension from the VsCode
+
+code --list-extensions > extensions.txt
+
+2- Install all the extensions in the second VsCode
+
+cat extensions.txt | xargs -n 1 code --install-extension
