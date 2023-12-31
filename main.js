@@ -45,6 +45,41 @@
 //   },
 // });
 
+// DROPDOWN MENU
+const dropdownMenuButtons = document.querySelectorAll(".dropdown-button");
+
+dropdownMenuButtons.forEach((dropdownMenuButton) => {
+  dropdownMenuButton.addEventListener("click", function () {
+    const dropdownMenu = this.nextElementSibling;
+    dropdownMenu.classList.toggle("open");
+    const classSelector = ".dropdown-button";
+    clickOutside(dropdownMenu, this, classSelector);
+  });
+});
+
+// FUNCTION: CLICK OUTSIDE ELEMENT TO HIDE IT
+function clickOutside(element, exclude = null, className = null) {
+  // ADD CLICK EVENT LISTENER TO THE DOCUMENT
+  document.addEventListener("click", (e) => {
+    // console.log(element, e.target);
+    // CHECK OUT IF THE EXCLUDED ELEMENT IS NOT NULL && CLASS NAME TO COMPARE IT WITH IT IS NOT NULL TOO
+    if (
+      exclude !== null &&
+      className !== null &&
+      e.target.closest(className) === exclude
+    )
+      return;
+
+    // CHECK OUT IF THE CLICKED TARGET ELEMENT IS AN ELEMENT WITHIN THE GIVEN ELEMENT
+    const isClicked = element.contains(e.target);
+    if (!isClicked) {
+      element.classList.remove("open");
+    }
+  });
+}
+
+/*
+// SWIPER
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -73,6 +108,6 @@ var swiper = new Swiper(".mySwiper", {
   initialSlide: 1, // Start from the second slide
 });
 
-
 const yearElement = document.querySelector(".copyright-year");
 yearElement.textContent = new Date().getFullYear();
+*/
