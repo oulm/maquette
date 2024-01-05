@@ -1,9 +1,0 @@
-body {
-  /* height: 40vh;
-  min-height: 100vh; */
-}
-
-main {
-  min-height: var(--within-viewport);
-  height: 100%;
-}
