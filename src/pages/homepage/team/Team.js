@@ -20,7 +20,7 @@ import "./TeamStyle.css";
 
 const Team = () => {
   return (
-    <section id="team" className="teams">
+    <section className="teams">
       <div className="container">
         <Swiper
           // install Swiper modules

@@ -2,15 +2,15 @@ import "./AboutStyle.css";
 
 const About = () => {
   return (
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-content">
-          <h1 class="about-title">About the game</h1>
-          <div class="about-core">
-            <div class="about-img">
+    <section className="about" id="about">
+      <div className="container">
+        <div className="about-content">
+          <h1 className="about-title">About the game</h1>
+          <div className="about-core">
+            <div className="about-img">
               <img src="/images/table.svg" alt="table" />
             </div>
-            <p class="about-description">
+            <p className="about-description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
               tempore, blanditiis doloribus, quod distinctio harum laboriosam
               quia ducimus quo, reprehenderit dignissimos ex cupiditate aperiam!
